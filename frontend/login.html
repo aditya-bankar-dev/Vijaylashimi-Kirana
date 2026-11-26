@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login - Kirana Manager</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+<body><div class="login-wrap">
+  <div class="login-hero"><img class="store-brand-logo" src="assets/vijayalakshmi-logo.png" alt="विजयलक्ष्मी किराणा स्टोअर लोगो"><h1>विजयलक्ष्मी किराणा स्टोअर</h1>
+    <p class="fs-5 opacity-75">Billing, inventory, purchases and reports for your grocery store, in one place.</p>
+    <ul class="list-unstyled opacity-75 mt-3"><li><i class="bi bi-check-circle-fill me-2"></i>Fast barcode billing with GST</li><li><i class="bi bi-check-circle-fill me-2"></i>Live stock and expiry alerts</li><li><i class="bi bi-check-circle-fill me-2"></i>UPI, card and cash payments</li></ul></div>
+  <div class="login-form"><div class="d-flex justify-content-end mb-3"><select class="form-select form-select-sm" id="languageSelect" aria-label="Language" style="width:auto" onchange="setLanguage(this.value)"><option value="en">English</option><option value="mr">मराठी</option></select></div><form id="f" class="cardx w-100" style="max-width:400px" novalidate>
+    <img class="login-form-logo" src="assets/vijayalakshmi-logo.png" alt="विजयलक्ष्मी किराणा स्टोअर लोगो">
+    <h4 class="mb-1">Welcome back</h4><p class="text-muted mb-4">Sign in to continue</p>
+    <label class="form-label">Email</label><input id="email" type="email" class="form-control mb-3" required autofocus>
+    <label class="form-label">Password</label><input id="password" type="password" class="form-control mb-3" required>
+    <div id="err" class="text-danger small mb-2"></div>
+    <button class="btn btn-green w-100 py-2" id="btn">Sign in</button></form></div>
+</div><script src="js/i18n.js"></script><script src="js/api.js"></script><script src="js/login.js"></script></body></html>
